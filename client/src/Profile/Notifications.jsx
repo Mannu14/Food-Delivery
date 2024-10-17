@@ -14,6 +14,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 const apiUrlProcess_SOCKET = `${window.location.origin}`;
 const socket = io(`${apiUrlProcess_SOCKET}`, {
     withCredentials: true,
+    transports: ['websocket', 'polling']
 });
 
 const Notifications = () => {
