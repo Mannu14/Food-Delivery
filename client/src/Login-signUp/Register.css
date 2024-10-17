@@ -1,0 +1,152 @@
+.Register-form {
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 20px 35px;
+    margin: 0 auto;
+}
+.Register-container {
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 20px 35px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    padding-top: 0px;
+}
+.Register-container form {
+    margin-left: -25px;
+}
+
+form * {
+    font-family: 'Poppins', sans-serif;
+    /* color: #ffffff; */
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+.two-two-input {
+    display: flex;
+    justify-content: space-between;
+}
+.two-two-input .input-label, .two-two-input-p {
+    width: 100%;
+    margin-left: 20px;
+}
+
+form h2, form h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.input-label {
+    display: block;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 0 10px;
+}
+
+.icon {
+    padding: 10px;
+    color: white;
+}
+
+.Register-form input {
+    height: 50px;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: #e5e5e5;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: #e5e5e5;
+}
+
+#submit-btn {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border: 2px solid #c5cae9;
+    color: #c5cae9;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#submit-btn:hover {
+    color: #455054;
+    background-color: #c5cae9;
+}
+#alart-msg {
+    color: rgb(219, 73, 73);
+    font-family: math;
+    font-size: clamp(6px, 3vw, 15px);
+    text-align: center;
+}
+.Register-submit-1 {
+    margin-left: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: #f1ceb2;
+    margin-top: 30px;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .Register-container {
+        width: 60vw;
+    }
+    .two-two-input {
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .Register-container {
+        width: 80vw;
+    }
+    .Register-container form {
+        margin-left: -15%;
+    }
+}
+
+@media (max-width: 400px) {
+    .Register-container {
+        margin-left: -3vw;
+    }
+}

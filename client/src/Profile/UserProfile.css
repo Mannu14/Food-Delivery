@@ -1,0 +1,270 @@
+.user-profile-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #4caf50;
+}
+
+.user-email,
+.user-phone {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.profile-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #4caf50;
+}
+
+.vehicle-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.vehicle-image {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.vehicle-image:hover {
+    transform: scale(1.1);
+}
+
+.profile-details h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+}
+
+.profile-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-details li {
+    font-size: 16px;
+    color: #898989;
+    margin-bottom: 10px;
+}
+
+.profile-status {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-status h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #898989;
+}
+
+.profile-status p {
+    font-size: 18px;
+    color: #4caf50;
+    margin: 0;
+}
+
+.user-stats {
+    margin-top: 20px;
+    color: #555;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease-in-out;
+}
+
+.stat-item:hover {
+    transform: scale(1.08);
+}
+
+.stat-item h4 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    font-size: 22px;
+    color: #4caf50;
+    margin: 0;
+}
+
+.vhical-image {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.vehicle-images p {
+    color: #777;
+    font-size: 12px;
+    text-align: center;
+}
+
+.user-order-history{
+    margin-top: 20px;
+}
+
+.user-order-history h3 {
+    font-size: 20px;
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.order-item-profile {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-item-profile strong {
+    color: #555;
+}
+
+.order-item-profile.delivered {
+    border-left: 5px solid #4caf50;
+}
+
+.order-item-profile.canceled {
+    border-left: 5px solid #f44336;
+}
+
+.order-item-profile.in-progress {
+    border-left: 5px solid #ff9800;
+    background: #f7f7f7;
+}
+.order-item-details{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+.order-item-details div{
+    display: flex;
+    align-items: center;
+    color: #555;
+    font-size: 12px;
+}
+.order-item-details div p{
+    padding: 0 10px;
+}
+.order-item-details .strong-mul{
+    padding: 0 5px;
+}
+.order-item-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.profile-restaurant{
+    background: #f5f2f2;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vehicle-image {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .user-email,
+    .user-phone {
+        font-size: 14px;
+    }
+
+    .profile-details h3,
+    .profile-status h3,
+    .user-order-history h3 {
+        font-size: 18px;
+    }
+
+    .stat-item h4 {
+        font-size: 16px;
+    }
+
+    .stat-item p {
+        font-size: 20px;
+    }
+
+    .order-item {
+        padding: 8px;
+    }
+}
+

@@ -1,0 +1,338 @@
+/* General styles */
+.notification-container {
+  width: 98%;
+  margin: auto;
+  /* margin-top: 30px; */
+  max-width: 550px;
+  font-family: Arial, sans-serif;
+}
+.div-for-notification {
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  top: 0%;
+  background: #333333aa;
+  border-radius: 10px;
+  transition: bottom 0.4s ease-in-out;
+  z-index: 1000;
+}
+.notification-list{
+  /* max-height: 80vh; */
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+}
+.notification-list-2{
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%);
+  max-height: 80vh;
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  top: 10%;
+}
+
+.notification-container-extent {
+  max-width: 900px;
+}
+
+.notification-icon {
+  font-size: 24px;
+  cursor: pointer;
+  position: relative;
+  text-align: right;
+  color: #333;
+}
+/* 
+.notification-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+} */
+
+.notification-list {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.notification-item {
+  padding: 10px;
+  /* Gap between notifications */
+  border-radius: 4px;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-item:last-child {
+  margin-bottom: 0;
+}
+
+.unseen {
+  background-color: #f9f9f9;
+  border-left: 5px solid blue;
+}
+
+.seen {
+  background-color: #e0e0e0;
+  border-left: 5px solid gray;
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.notification-time {
+  font-size: 9px;
+  color: #6f6f6f;
+  font-weight: 800;
+}
+
+.restaurant-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.notification-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant-name {
+  font-size: 16px;
+  /* Larger font size */
+  font-weight: bold;
+}
+
+.user-name {
+  font-size: 14px;
+  /* Slightly larger font size */
+}
+
+.notification-message {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.notification-details {
+  font-size: 12px;
+  color: #555;
+}
+
+
+.accept-reject-div {
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  height: 0;
+  margin-bottom: 10px;
+}
+
+.accept-reject-div.extent-Div {
+  height: 50px;
+}
+
+.accept-reject-div.extent-Div-1 {
+  height: 400px;
+  overflow: auto;
+}
+
+.notification-expanded-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  height: 50px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.accept-reject-div.extent-Div-1 .notification-expanded {
+  width: 100%;
+}
+
+.notification-expanded .left-section {
+  width: 100%;
+}
+
+.notification-expanded-btn button {
+  border: 2px solid #9a9bce;
+  color: #333334;
+  border-radius: 50px;
+  padding: 5px 15px;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-expanded-btn button:hover {
+  background-color: #9a9bce;
+  color: #dadaf0;
+}
+
+
+.user-details-notification {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Adds space between each card */
+}
+
+.user-details-notification .delivery-boy-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  /* For absolute positioning of buttons */
+}
+
+.user-details-notification .user-profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 4px !important;
+  /* Space between image and text */
+}
+
+.user-details-notification .delivery-boy-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+.user-details-notification .delivery-boy-name,
+.user-details-notification .delivery-boy-phone {
+  margin: 0;
+}
+
+.delivery-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.user-details-notification .button-group-notification {
+  position: absolute;
+  /* top: 30px; */
+  right: 10px;
+  display: flex;
+  gap: 5px;
+  /* Space between buttons */
+}
+
+.user-details-notification .accept-button,
+.user-details-notification .reject-button,
+.user-details-notification .view-button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px !important;
+}
+
+.user-details-notification .reject-button {
+  background-color: #dc3545;
+}
+
+.user-details-notification .view-button {
+  background-color: #28a745;
+}
+
+.accept-button:hover,
+.reject-button:hover,
+.view-button:hover {
+  opacity: 0.8;
+  /* Adds a hover effect */
+}
+
+.delivery-boy-details {
+  background-color: #f9f9f9;
+  transition: all 0.4s ease-in-out;
+  min-height: 0;
+}
+.delivery-boy-details-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.delivery-boy-details-Extent{
+  min-height: 170px;
+}
+.delivery-boy-details .delivery-boy-details-2{
+  margin: auto;
+}
+.delivery-boy-details .delivery-boy-details-2 p{
+  padding: 10px;
+}
+
+.delivery-boy-details h4 {
+  margin: 0 0 10px 0;
+}
+
+.vehicle-image-restaurant {
+  width: 100px !important;
+  height: 70px !important;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px !important;
+  display: inline-block;
+}
+
+/** * scrollbar style*/
+.notification-list::-webkit-scrollbar {
+  width: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.notification-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.notification-list::-webkit-scrollbar-thumb {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.notification-list::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 70%);
+}
+.notification-list:hover::-webkit-scrollbar {
+  opacity: 1;
+}
+.notification-list:hover::-webkit-scrollbar-thumb {
+  opacity: 1;
+  background: #d2d1d1;
+  border: 3px solid #d2d1d1;
+}

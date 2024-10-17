@@ -1,0 +1,238 @@
+/* ---------------------cart item----------------------- */
+.small-container {
+    max-width: 1080px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: auto;
+    top: 1px;
+    background: #fff;
+    right: 0px;
+    position: fixed;
+    z-index: 100;
+
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cart-visible {
+    transform: translateX(0);
+}
+
+.cart-hidden {
+    transform: translateX(100%);
+}
+
+.cart-page {
+    /* height: 530px; */
+    padding: 50px 20px;
+    padding-top: 0;
+    background: #FFF;
+    /* overflow: auto; */
+    margin: 0px auto;
+    height: 100%;
+}
+
+.visiblityclass {
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+}
+
+.details-Cart {
+    padding-top: 20px;
+    width: 100%;
+    max-height: 550px;
+    min-height: 450px;
+    overflow: auto;
+}
+
+.cart-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-page th {
+    text-align: left;
+    padding: 5px 20px;
+    color: #fff;
+    background: #524b4a;
+    font-weight: normal;
+}
+
+.cart-page td {
+    padding: 10px 5px;
+    color: #000;
+}
+.addPrice{
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.cart-page td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    margin: auto;
+}
+
+.cart-page td i {
+    margin-left: 20px;
+    color: #ff523b;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cart-page td i:hover{
+    color: #929dc4;
+}
+
+.cart-page td img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid #524b4a;
+    width: 100%;
+}
+
+.cart-page td:last-child {
+    text-align: right;
+}
+
+.cart-page th:last-child {
+    text-align: right;
+}
+
+.OrderNow {
+    margin: auto;
+    border: 2px solid #929dc4;
+    border-radius: 50px;
+}
+.OrderNow a{
+    padding: 6px 40px;
+    border-radius: 50px;
+    color: #929dc4;
+}
+
+.OrderNow:hover a{
+    color: rgb(255, 255, 255);
+}
+.OrderNow:hover,.OrderNow:hover a:hover {
+    background: #929dc4;
+}
+
+/* search.css ----  */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 30px 0 0 30px;
+}
+
+.search-button {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #ff4500;
+}
+
+.search-button ion-icon {
+    font-size: 20px;
+}
+
+.search-data {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-data ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-data li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-data li:last-child {
+    border-bottom: none;
+}
+
+.search-data p {
+    text-align: center;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        max-width: 100%;
+    }
+
+    .search-input {
+        font-size: 14px;
+    }
+
+    .search-button {
+        padding: 10px 15px;
+    }
+
+    .search-data {
+        max-width: 100%;
+    }
+}

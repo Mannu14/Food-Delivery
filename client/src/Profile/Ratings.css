@@ -1,0 +1,138 @@
+.status-update-modal .rating-section {
+    margin: 10px 0;
+}
+
+.status-update-modal .rating-section .rating-section-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0 0 0;
+}
+
+.status-update-modal .rating-section .rating-section-div img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.status-update-modal .stars-container {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.status-update-modal .star {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.status-update-modal .comment-section {
+    margin: 20px 0;
+    display: grid;
+}
+
+.status-update-modal .comment-section label {
+    text-align: start;
+    margin: 5px 0;
+}
+
+.status-update-modal .comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-shadow: none;
+    overflow: hidden;
+    min-height: 40px;
+}
+
+.status-update-modal .comment-section textarea::placeholder {
+    color: #888;
+}
+
+.status-update-modal .comment-section textarea:focus {
+    border-color: #4a90e2;
+    background-color: #fff;
+}
+
+.status-update-modal .button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-update-modal .error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* __________coupenComponent____________ */
+.coupon-container {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 300px;
+    overflow: auto;
+}
+
+.coupon-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coupon-item-block {
+    width: calc(100% - 20%);
+    padding-right: 10px;
+    font-size: 11px;
+}
+
+.coupon-item button {
+    margin-top: 10px;
+}
+
+.coupon-item-btn {
+    padding: 0px 25px !important;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 20px !important;
+}
+
+/* ___________coupen cart____________ */
+
+.coupon-popup {
+    position: fixed;
+    bottom: 3%;
+    left: 60%;
+    right: 1%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-top: 1px solid #ddd;
+    animation: slideIn 0.5s forwards;
+}
+
+@media (max-width: 768px) {
+    .coupon-popup {
+        left: 0;
+        right: 0;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

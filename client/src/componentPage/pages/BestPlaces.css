@@ -1,0 +1,256 @@
+/* Main separator style */
+.BestPlaces.separator {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+}
+
+/* Header styling */
+.BestPlaces .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+.BestPlaces .header h1 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+/* Container for all place cards */
+.BestPlaces .places-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+/* Each place card */
+.BestPlaces .place-card {
+    width: 18%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(2, 6, 12, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BestPlaces .place-card:hover {
+    background-color: #ffedcc;
+}
+
+/* Text inside each place card */
+.BestPlaces .place-card h2 {
+    font-size: 0.7rem;
+    color: #050e1b;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Show more / show less button */
+.BestPlaces .show-more,
+.BestPlaces .show-less {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18%;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(2, 6, 12, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BestPlaces .show-more:hover,
+.BestPlaces .show-less:hover {
+    background-color: #ff9933;
+}
+
+/* Icon for show more/less */
+.BestPlaces .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    color: #050e1b;
+}
+
+/* ---RestaurantList___________ */
+
+/* Separator style */
+.separator {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+}
+
+/* Container for restaurants section */
+.RestaurantList .restaurants-container {
+    margin: 2rem;
+}
+
+/* Title section for the header */
+.RestaurantList .title-section {
+    margin: 2rem 4rem;
+}
+
+.RestaurantList .title-section h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    letter-spacing: -0.5px;
+}
+
+/* Filter button container */
+.RestaurantList .filter-section {
+    display: flex;
+    align-items: center;
+    margin: 0 4rem 2rem;
+    overflow-x: auto;
+}
+
+/* Filter button common styling */
+.RestaurantList .filter-button,
+.sort-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    min-width: fit-content;
+    margin-right: 1rem;
+    transition: background-color 0.2s ease-in;
+}
+
+/* Active filter */
+.RestaurantList .active-sort {
+    background-color: #ffcc99;
+    border: 1px solid orange;
+}
+
+.RestaurantList .inactive-sort {
+    background-color: transparent;
+    border: 1px solid rgba(2, 6, 12, 0.1);
+}
+
+.RestaurantList .sort-button h1 {
+    font-size: 1rem;
+    color: #050e1b;
+    font-weight: 500;
+}
+
+/* Restaurant grid for displaying cards */
+.RestaurantList .restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 4rem;
+}
+
+/* Restaurant card container */
+.restaurant-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Hover effect for restaurant cards */
+.restaurant-card:hover {
+    transform: scale(0.98);
+}
+
+/* Image container with shadow and deal overlay */
+.image-container {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.deal-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.green-star {
+    color: #4dc037 !important;
+    margin-right: 0.5rem;
+}
+
+.restaurant-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.no-restaurant-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.no-restaurant-message .image-container-for {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.no-restaurant-message .no-restaurant-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(80%);
+    transition: transform 0.3s ease;
+}
+
+.no-restaurant-message .image-container:hover .no-restaurant-image {
+    transform: scale(1.05);
+}
+
+.no-restaurant-message .overlay-text {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.no-restaurant-message .overlay-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc80;
+    margin: 0;
+}
