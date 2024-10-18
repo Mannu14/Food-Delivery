@@ -239,7 +239,7 @@ function RestaurantMenu() {
         const scrollTop = document.documentElement.scrollTop;
         const innerHeight = window.innerHeight;
 
-        if (innerHeight + scrollTop >= scrollHeight - 400 && !loading && hasMore) {
+        if (innerHeight + scrollTop >= scrollHeight - 500 && !loading && hasMore) {
             setPage(prevPage => prevPage + 1);
         }
     };
@@ -302,7 +302,7 @@ function RestaurantMenu() {
         const scrollTop = document.documentElement.scrollTop;
         const innerHeight = window.innerHeight;
 
-        if (innerHeight + scrollTop >= scrollHeight - 1 && !loadingMenu && hasMoreMenu) {
+        if (innerHeight + scrollTop >= scrollHeight - 500 && !loadingMenu && hasMoreMenu) {
             setPageMenu(prevPage => prevPage + 1);  // Increment pageMenu to fetch the next page
         }
     };

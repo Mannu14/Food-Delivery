@@ -332,7 +332,7 @@
 }
 
 @media screen and (max-width: 568px){
-    .restaurant-menu-container .menu-item img {
+    .restaurant-menu-container .menu-item img,.LazyLoadImage-img {
         width: 95px;
         height: 100px;
     }

@@ -32,6 +32,7 @@ const socket = io(`${apiUrlProcess_SOCKET}`, {
 
 
 function Cart() {
+    const apiUrlProcess = `${window.location.origin}/apis`;
     const [orderStatus, setOrderStatus] = useState({});
     const [contactlessDelivery, setContactlessDelivery] = useState(false);
     const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('');
