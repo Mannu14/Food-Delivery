@@ -1191,19 +1191,19 @@ const ordersInProgress = async (req, res) => {
     if (req.user && req.user.id) {
       const user = await Register.findById(req.user.id);
       if (!user) {
-        return res.status(404).json({ alertMsg: 'User not found' });
+        return res.status(201).json({ alertMsg: 'User not found' });
       }
 
       const email = user.email;
       const userOrder = await userOrders.findOne({ email });
 
       if (!userOrder || !userOrder.orders.length) {
-        return res.status(404).json({ alertMsg: 'No orders found' });
+        return res.status(201).json({ alertMsg: 'No orders found' });
       }
       const inProgressOrders = userOrder.orders.filter(order => order.status === 'In-Progress');
 
       if (!inProgressOrders.length) {
-        return res.status(404).json({ alertMsg: 'No In-Progress orders found' });
+        return res.status(201).json({ alertMsg: 'No In-Progress orders found' });
       }
       // Iterate through each order
       for (const order of inProgressOrders) {

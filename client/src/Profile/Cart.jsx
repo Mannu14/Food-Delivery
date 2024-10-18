@@ -89,13 +89,16 @@ function Cart() {
     });
 
     useEffect(() => {
-        const fetchUserData = async () => {
+        const fetchUserDataorders = async () => {
             setorderStatusLoading(true);
             try {
                 const response = await fetch(`${apiUrlProcess}/Cart/orders/in-progress`, {
                     method: 'GET',
                     credentials: 'include',
                 });
+                if (!response.ok) {
+                    console.log("Error to fetch data");
+                }
                 if (response.status === 401) {
                     setBackedError('Unauthorized');
                     return;
@@ -123,7 +126,7 @@ function Cart() {
             }
         };
 
-        fetchUserData();
+        fetchUserDataorders();
     }, []);
 
     useEffect(() => {

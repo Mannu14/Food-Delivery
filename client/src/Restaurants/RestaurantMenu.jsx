@@ -142,14 +142,14 @@ function RestaurantMenu() {
 
     const AddQuantity = (menuItem, restaurantData) => {
         const user_id = user?._id;
-        const imgSrc = `../src/${menuItem.image}`;
+        const imgSrc = `https://res.cloudinary.com/diz4lqbev/image/upload/v1234567890/${menuItem.image}.jpg`;
         const price = menuItem.Price;
         const ratings = ((menuItem.Ratings[0].Rating) * 5 / menuItem.Ratings[0].RatingCount).toFixed(1);
         const title = menuItem.ItemName;
         const DataId = menuItem.MenuId;
         const value = getInitialQuantity(DataId) + 1;
         const RestaurantName = restaurantData.RestaurantName;
-        const RestaurantImgSrc = `../src/${restaurantData.RestaurantImgage}`;
+        const RestaurantImgSrc = `https://res.cloudinary.com/diz4lqbev/image/upload/v1234567890/${restaurantData.RestaurantImgage}.jpg`;
         const RestaurantRestaurantId = restaurantData.RestaurantId;
         const lat = restaurantData.RestaurantLocation[0].lat;
         const lng = restaurantData.RestaurantLocation[0].lng;
