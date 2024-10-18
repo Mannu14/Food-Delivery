@@ -580,7 +580,7 @@ function RestaurantMenu() {
 
             {showModalDeal && selectedDealItem && user?.restaurant === '1' && (
                 <div className="modal-overlay" onClick={handleClickOutside}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                    <div className="modal-content" style={{height:'90%'}} onClick={(e) => e.stopPropagation()}>
                         <button className="close-modal" onClick={closeModal}>X</button>
                         <RestaurantMenuForm
                             UpdateDeal={selectedDealItem}
@@ -593,7 +593,7 @@ function RestaurantMenu() {
 
             {showModalMenu && selectedMenuItem && user?.restaurant === '1' && (
                 <div className="modal-overlay" onClick={handleClickOutside}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                    <div className="modal-content" style={{height:'90%'}} onClick={(e) => e.stopPropagation()}>
                         <button className="close-modal" onClick={closeModal}>X</button>
                         <RestaurantMenuForm
                             UpdateMenu={selectedMenuItem}
@@ -606,7 +606,7 @@ function RestaurantMenu() {
 
             {showModal && user?.restaurant === '1' && (
                 <div className="modal-overlay" onClick={handleClickOutside}>
-                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                    <div className="modal-content" style={{height:'90%'}} onClick={(e) => e.stopPropagation()}>
                         <button className="close-modal" onClick={closeModal}>X</button>
                         <RestaurantForm restaurantDataUpdate={IsRestaurantUpdate ? restaurantData : ''} onClose={closeModal} />
                     </div>

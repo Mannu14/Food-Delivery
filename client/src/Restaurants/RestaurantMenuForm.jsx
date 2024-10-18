@@ -70,7 +70,7 @@ function RestaurantMenuForm({ UpdateMenu, UpdateDeal, MyRestaurantId, onClose })
 }
 
 function MenuItemsForm(UpdateMenu) {
-  const apiUrlProcess = import.meta.env.VITE_API_URL;
+  const apiUrlProcess = `${window.location.origin}/apis`;
 
   const myMenu = UpdateMenu.UpdateMenu
 
