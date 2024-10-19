@@ -182,6 +182,7 @@
   border-radius: 50px;
   padding: 5px 15px;
   margin: 0;
+  font-size: 13px;
   box-sizing: border-box;
   transition: all 0.2s ease-in-out;
 }
